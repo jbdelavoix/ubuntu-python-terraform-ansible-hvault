@@ -15,16 +15,22 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     ansible \
     bash \
+    curl \
+    dnsutils \
     dos2unix \
     git \
+    htop \
+    iputils-arping \
+    iputils-clockdiff \
+    iputils-ping \
+    iputils-tracepath \
+    net-tools \
     python-is-python3 \
     python3 \
     python3-pip \
-    unzip \
-    wget \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN apt-get update && apt-get install -y \
     sshpass \
+    telnet \
+    unzip \
     vim \
+    wget \
     && rm -rf /var/lib/apt/lists/*
